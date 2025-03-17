@@ -35,3 +35,27 @@ nav a {
     background: #005663; /* cor de fundo */
     border-radius: 5px; /* borda com canto arredondado */
 }
+nav a:hover {
+    background: #003d82;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    margin-right: 5px; /* espaçamento externo à direita de 20px */
+    border-radius: 10px;
+}
+
+.container{
+    width: 80%;
+    /* 20px em cima e em baixo e automática èsquerda e direto*/
+    margin: 20px auto; 
+    background: white;
+    /* espaçamento interno é nos 4 lados */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+h2 {
+    text-align: center;
+}
