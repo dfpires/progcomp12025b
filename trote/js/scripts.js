@@ -22,22 +22,19 @@ function calcular(){
         if (kit >= 97 && suplemento >= 49) {
             pontosKitSupl = 5000 + ((kit - 97) * 30) + ((suplemento - 49) * 15)
         }
-        else if (kit >= 78){
-            pontosKitSupl = 4000 + ((kit - 78) * 30)
+        else if (kit >= 78 && suplemento >= 39){
+            pontosKitSupl = 4000 + ((kit - 78) * 30) + ((suplemento - 39) * 15)
         }
-        else if (kit >= 49) {
-            pontosKitSupl = 2500 + ((kit - 49) * 30)
+        else if (kit >= 49 && suplemento >= 25) {
+            pontosKitSupl = 2500 + ((kit - 49) * 30) + ((suplemento - 25) * 15)
         }
-        else if (kit >= 19){
-            pontosKitSupl = 1000 + ((kit - 19) * 30)
-        }
-        else {
-            pontosKitSupl = (kit * 30)
+        else if (kit >= 19 && suplemento >= 10){
+            pontosKitSupl = 1000 + ((kit - 19) * 30) + ((suplemento - 10) * 15)
         }
     }
-    alert(pontosKitSupl)
+   
     soma = soma + pontosKitSupl
    
     // devolve o resultado para o HTML
-    document.getElementById("soma").innerHTML = soma.toFixed(2)
+    document.getElementById("soma").innerHTML = `R$ ${soma.toFixed(2)}`
 }
